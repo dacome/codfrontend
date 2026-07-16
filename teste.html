@@ -64,6 +64,46 @@
         </tr>
       </tbody>
     </table>
+
+    <form
+id="form-contact"
+action="/enviar"
+method="POST"
+novalidate>
+<fieldset>
+<legend>Dados de Contato</legend>
+<label for="input-name">
+Nome:
+</label>
+<input
+type="text"
+id="input-name"
+name="name"
+required>
+
+<select name="category" id="input-category">
+<option value="">Selecione...</option>
+<option value="eletronicos">Eletrônicos</option>
+<option value="moda">Moda</option>
+</select>
+
+<input type="radio" name="client-type" id="radio-pf" value="pf">
+<label for="radio-pf">Pessoa Física</label>
+<input type="radio" name="client-type" id="radio-pj" value="pj">
+<label for="radio-pj">Pessoa Jurídica</label>
+
+<input type="checkbox" name="preferences" id="check-offers" value="offers">
+<label for="check-offers">Receber ofertas</label>
+<input type="checkbox" name="preferences" id="check-news" value="news">
+<label for="check-news">Newsletter</label>
+
+</fieldset>
+<button type="submit">
+Enviar
+</button>
+</form>
+
+
     <footer>
       <section id="faleconosco">
         <h3>(21) 98765-1234</h3>
